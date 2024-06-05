@@ -1,3 +1,13 @@
 from django.contrib import admin
 
-# Register your models here.
+from models import Place, Shop
+
+
+@admin.register(Shop)
+class ShopAdmin(admin.ModelAdmin):
+    list_display = ('name', 'supervisor', 'place', 'is_open',)
+
+
+@admin.register(Place)
+class PlaceAdmin(admin.ModelAdmin):
+    list_display = ('name', 'population')

@@ -25,6 +25,5 @@ router.register(prefix='shop', viewset=ShopViewSet)
 router.register(prefix='place', viewset=PlaceViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('shop/', include(router.urls)),
-    path('place/', include(router.urls))
+    path('', include(router.urls)),
 ]

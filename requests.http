@@ -1,0 +1,44 @@
+### 
+GET http://localhost:8000/place/
+###
+POST http://localhost:8000/place/
+Content-Type: application/json
+
+{
+    "name": "Октябрьское поле",
+    "population": 10000
+}
+###
+POST http://localhost:8000/place/
+Content-Type: application/json
+
+{
+    "name": "Беговая",
+    "population": 400000
+}
+###
+POST http://localhost:8000/place/
+Content-Type: application/json
+
+{
+    "name": "Китай-город",
+    "population": 65679
+}
+###
+POST http://localhost:8000/place/
+Content-Type: application/json
+
+{
+    "name": "Щукинская",
+    "population": 4547567
+}
+####
+PATCH  http://localhost:8000/place/4/
+Content-Type: application/json
+
+{
+    "name": "ЦСКА",
+    "population": 10000
+}
+###
+GET http://localhost:8000/place/2
